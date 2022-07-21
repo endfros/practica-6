@@ -12,12 +12,12 @@ font-family: 'Lexend Deca', sans-serif; */
     align-items: center;
 }
 
-h2{
+.h2{
     font-family: 'Big Shoulders Display', cursive;
     font-size: 30px;
 }
 
-p{
+.p{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
 }
@@ -29,56 +29,18 @@ p{
     padding: 30px;
 }
 
-.article img{
+.article .img{
     width: 100px;
     height: 100px;
 }
 
-.article button{
+.article .button{
     margin-top: 15px;
     width: 130px;
     height: 40px;
 }
 
-.article__sedans{
-    background-color: hsl(31, 77%, 52%);
-    color: white;
-    border-radius: 5px 5px 0 0;
-}
-
-.article__sedans button{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
-    color: hsl(31, 77%, 52%);
-}
-
-.article__suvs{
-    background-color: hsl(184, 100%, 22%);
-    color: white;
-}
-
-.article__suvs button{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
-    color: hsl(184, 100%, 22%);
-}
-
-.article__luxury{
-    background-color: hsl(179, 100%, 13%);
-    color: white;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.article__luxury button{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
-    color: hsl(179, 100%, 13%);
-}
-
-.article button:hover{
+.article .button:hover{
 
     background-color: transparent;
     color: white;
@@ -86,4 +48,52 @@ p{
     border: 5px;
     width: 130px;
     height: 40px;
+}
+
+
+
+
+.article__sedans{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.article__sedans .button--BrightOrange{
+    background-color: white;
+    border-radius: 20px;
+    border-color: white;
+    color: hsl(31, 77%, 52%);
+}
+
+
+
+
+.article__suvs{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.article__suvs .button--DarkCyan{
+    background-color: white;
+    border-radius: 20px;
+    border-color: white;
+    color: hsl(184, 100%, 22%);
+}
+
+
+
+
+
+.article__luxury{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.article__luxury .button--VeryDarkCyan{
+    background-color: white;
+    border-radius: 20px;
+    border-color: white;
+    color: hsl(179, 100%, 13%);
 }
