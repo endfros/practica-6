@@ -6,94 +6,104 @@ font-family: 'Lexend Deca', sans-serif; */
     box-sizing: border-box;
 }
 
+body{
+    
+    background-color: hsl(0, 0%, 95%);
+}
+
 .main{
-    display: flex;
+    margin: 40px 0 40px 0;
+    display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.article{
+    width: 360px;
+    padding: 60px;
+}
+
+.img{
+    width: 75px;
+    height: 47px;
 }
 
 .h2{
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 30px;
+    font-size: 45px;
+    font-weight: 500;
+    color: hsl(0, 0%, 95%);
 }
 
 .p{
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
 }
 
-.article{
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    padding: 30px;
-}
-
-.article .img{
-    width: 100px;
-    height: 100px;
-}
-
-.article .button{
+.button{
     margin-top: 15px;
-    width: 130px;
-    height: 40px;
+    width: 150px;
+    height: 55px;
+    color:  hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 450;
+    font-size: 17px;
 }
 
-.article .button:hover{
-
+.button:hover{
     background-color: transparent;
-    color: white;
-    margin-top: 15px;
-    border: 5px;
-    width: 130px;
-    height: 40px;
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
 }
 
-
-
-
-.article__sedans{
+.article--sedans{
     background-color: hsl(31, 77%, 52%);
-    color: white;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
-.article__sedans .button--BrightOrange{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
+.button--sedans{
     color: hsl(31, 77%, 52%);
 }
 
-
-
-
-.article__suvs{
+.article--suvs{
     background-color: hsl(184, 100%, 22%);
-    color: white;
 }
 
-.article__suvs .button--DarkCyan{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
+.button--suvs{
     color: hsl(184, 100%, 22%);
 }
 
-
-
-
-
-.article__luxury{
+.article--luxury{
     background-color: hsl(179, 100%, 13%);
-    color: white;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.article__luxury .button--VeryDarkCyan{
-    background-color: white;
-    border-radius: 20px;
-    border-color: white;
+.button--luxury{
     color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1024px) {
+
+    .main{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .article--sedans{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .article--luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 10px 10px 0 ;
+    }
 }
