@@ -7,7 +7,6 @@ font-family: 'Lexend Deca', sans-serif; */
 }
 
 body{
-    
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -24,19 +23,19 @@ body{
     padding: 60px;
 }
 
-.img{
+.article__icon{
     width: 75px;
     height: 47px;
 }
 
-.h2{
+.article__title{
     font-family: 'Big Shoulders Display', cursive;
     font-size: 45px;
     font-weight: 500;
     color: hsl(0, 0%, 95%);
 }
 
-.p{
+.article__description{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 16px;
     color: hsla(0, 0%, 100%, 0.75);
